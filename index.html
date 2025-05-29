@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home Page XI A </title>
+  <link rel="icon" href="assets/xl-corp.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">xi
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <button class="header-btn" id="toggleSidebar">
+        <img src="assets/NavIcon.png" alt="Navigation Icon" class="sidebar-img" />
+      </button>
+      <div class="user-info">
+        <p>Hi, visitor!</p>
+        <h3>Welcome</h3>
+      </div>
+      <button class="header-btn">
+        <img src="assets/user.svg" alt="User Icon" class="user-img" />
+      </button>
+    </header>
+    <div class="hero" id="home">
+      <h1>XI A</h1>
+      <h3>Selamat datang di Website Kelas XIA!</h3>
+    </div>
+    
+    <div class="media-container">
+      <a class="media-box youtube" href="https://youtube.com/">
+        <div class="icon-row">
+          <i class="fab fa-youtube"></i>
+          <i class="fas fa-angle-right"></i>
+        </div>
+        <h3>Class YouTube</h3>
+        <p>View More</p>
+      </a>
+
+      <a class="media-box instagram" href="https://www.instagram.com/">
+        <div class="icon-row">
+          <i class="fab fa-instagram"></i>
+            <i class="fas fa-angle-right"></i>
+        </div>
+        <h3>Class Instagram</h3>
+        <p>View More</p>
+      </a>
+    </div>
+
+    <a class="media-box location" href="https://maps.app.goo.gl/5iZ5Q1GN4oyr5xxt9">
+      <div class="icon-row">
+        <i class="fas fa-location"></i>
+        <i class="fas fa-angle-right"></i>
+      </div>
+      <h3>Location School</h3>
+      <p>97MW+PH6, Jl. Walangko, Desa Karangan, Kec. Labuan Amas Utara, Kabupaten Hulu Sungai Tengah, Kalimantan Selatan 71362</p>
+    </a>
+    
+    <section id="gallery-section" class="gallery-wrapper">
+      <h2>Galeri Kegiatan</h2>
+      <div class="gallery-container" id="gallery-scroll">
+        <div class="gallery-item"><img src="assets/foto/IMG-20250510-WA0020.jpg" alt="Kegiatan 1"></div>
+        <div class="gallery-item"><img src="assets/foto/IMG-20250510-WA0021.jpg" alt="Kegiatan 2"></div>
+        <div class="gallery-item"><img src="assets/foto/IMG-20250510-WA0022.jpg" alt="Kegiatan 3"></div>
+        <div class="gallery-item"><img src="assets/foto/IMG-20250510-WA0023.jpg" alt="Kegiatan 4"></div>
+        <div class="gallery-item"><img src="assets/foto/IMG-20250510-WA0024.jpg" alt="Kegiatan 5"></div>
+        <div class="gallery-item"><img src="assets/foto/IMG-20250510-WA0025.jpg" alt="Kegiatan 6"></div>
+        <div class="gallery-item"><img src="assets/foto/IMG-20250510-WA0026.jpg" alt="Kegiatan 7"></div>
+        <div class="gallery-item"><img src="assets/foto/IMG-20250510-WA0027.jpg" alt="Kegiatan 8"></div>
+        <div class="gallery-item"><img src="assets/foto/IMG-20250510-WA0029.jpg" alt="Kegiatan 9"></div>
+        <div class="gallery-item"><img src="assets/foto/IMG-20250510-WA0030.jpg" alt="Kegiatan 10"></div>
+        <div class="gallery-item"><img src="assets/foto/IMG-20250510-WA0031.jpg" alt="Kegiatan 11"></div>
+        <div class="gallery-item"><img src="assets/foto/IMG-20250510-WA0032.jpg" alt="Kegiatan 12"></div>
+      </div>
+    </section>
+    
+    <div class="card-btn">
+      <button id="StructureBtn" class="card-item">
+        <h2>Structure</h2>
+      </button>
+      <h2 class="card-item">&</h2>
+      <button id="scheduleBtn" class="card-item">
+        <h2>Schedule</h2>
+      </button>
+    </div>
+<div class="card-container">
+  <div class="card" id="structure-section">
+    <section class="card-structure" id="structure">
+      <div class="structure-kelas">
+        <div class="wali-kelas">
+          <p>Wali Kelas</p>
+          <div class="box">Hulpiah S.Pd</div>
+        </div>
+
+        <div class="row">
+          <div class="ketua">
+            <p>Ketua Kelas</p>
+            <div class="box">Reza</div>
+          </div>
+          <div class="wakil">
+            <p>Wakil Kelas</p>
+            <div class="box">Nabil</div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="sekertaris">
+            <p>Sekertaris</p>
+            <div class="box">Sabrina</div>
+          </div>
+          <div class="bendahara">
+            <p>Bendahara</p>
+            <div class="box">Shafa</div>
+          </div>
+        </div>
+      </div>
+    </section>
+        <section class="card-schedule hidden" id="schedule">
+          <h2 id="DaySchedule">Loading...</h2>
+          <div class="schedule-wrapper">
+          <div class="schedule-class">
+            <div class="piket-class" id="piketTable">
+              
+              <h3>Piket</h3>
+              <p id="piketSchedule">Loading...</p>
+              
+            </div>
+            <div class="mapel-class" id="mapelTable">
+              
+              <h3>Mapel</h3>
+              <p id="mapel"> <span id="mapelTime"></span></p>
+              
+            </div>
+          </div>
+          </div>
+        </section>
+  </div>
+</div>
+    
+    <div class="credit-container">
+      <div class="credit creator">
+        <h3>Created By</h3>
+        <a href="https://github.com/rihanhacker558">
+          <p>XRENZ Launcher</p>
+        </a>
+        <a href="https://wa.me/6285133801810">
+          <p>XI Contact</p>
+        </a>
+      </div>
+      <div class="credit sosial">
+        <h3>Follow Us</h3>
+        <a href="https://youtube.com/">
+          <p>Youtube</p>
+        </a>
+        <a href="https://www.instagram.com/">
+          <p>Instagram</p>
+        </a>
+      </div>
+    </div>
+    <p class="credit-p">© 2025 Kelas XI A | Di Kelola Oleh Siswa XI A</p>
+  </div>
+  
+<div class="sidebar">
+  <button class="close-btn" id="closeSidebar">
+    <i class="fas fa-times"></i>
+  </button>
+  <h2>XI A</h2>
+  <nav>
+    <ul>
+      <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#gallery-section"><i class="fas fa-image"></i> Gallery</a></li>
+      <li><a href="#structure-section"><i class="fas fa-users"></i> Structure</a></li>
+      <li><a href="#structure-section"><i class="fas fa-calendar-alt"></i> Schedule</a></li>
+    </ul>
+  </nav>
+</div>
+
+  <script src="js/schedule.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/sidebar.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>
